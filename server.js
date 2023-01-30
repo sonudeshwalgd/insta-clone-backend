@@ -1,13 +1,15 @@
 import express from "express"
 import mongoose from "mongoose"
 import { router } from "./router/routers.js"
+// import 
 
-// mongoose.connect("mongodb://localhost:27017/usreData",).then((res)=>{
-// }).catch((err)=>{
-//     console.log(err)
-// })
+mongoose.connect("mongodb+srv://sonu:zxcvbnm55@cluster0.gvplum5.mongodb.net/?retryWrites=true&w=majority",).then((res)=>{
+}).catch((err)=>{
+    console.log(err)
+})
 
 const app=express()
+app.set("view engine" , "ejs")
 app.use(express.urlencoded({extended:true}))
 app.use("https://insta-backend-ui8r.onrender.com/",router)
 

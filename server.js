@@ -7,6 +7,7 @@ import { router } from "./router/routers.js"
 //     console.log(err)
 // })
 
+
 const app=express()
 app.set("view engine" , "ejs")
 app.use(express.urlencoded({extended:true}))

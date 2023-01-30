@@ -2,10 +2,10 @@ import express from "express"
 import mongoose from "mongoose"
 import { router } from "./router/routers.js"
 
-// mongoose.connect("mongodb+srv://sonu:zxcvbnm55@cluster0.gvplum5.mongodb.net/?retryWrites=true&w=majority",).then((res)=>{
-// }).catch((err)=>{
-//     console.log(err)
-// })
+mongoose.connect("mongodb+srv://sonu:zxcvbnm55@cluster0.gvplum5.mongodb.net/?retryWrites=true&w=majority",).then((res)=>{
+}).catch((err)=>{
+    console.log(err)
+})
 
 
 const app=express()

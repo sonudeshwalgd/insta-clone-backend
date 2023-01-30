@@ -9,7 +9,7 @@ import { router } from "./router/routers.js"
 
 const app=express()
 app.use(express.urlencoded({extended:true}))
-app.use("/",router)
+app.use("https://insta-backend-ui8r.onrender.com/",router)
 
 
 

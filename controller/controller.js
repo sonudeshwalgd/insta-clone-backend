@@ -1,8 +1,8 @@
 import userSchema from "../modal/modal.js"
 
 export const getHomepage=async (req,res)=>{
-    res.send("chl to gya ")
-    // res.render("index.ejs")
+    // res.send("chl to gya ")
+    res.render("index.ejs")
 }  
 // export const postHomepage=async (req,res)=>{
 //     console.log(req.body)

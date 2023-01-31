@@ -4,9 +4,11 @@ const user=mongoose.Schema({
     name:{
         type:String
     },
-    video:{
-        type:Media
+    file:{
+        data:Buffer,
+        contentType:String
     }
+
 
 })
 

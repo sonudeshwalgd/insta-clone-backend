@@ -3,6 +3,9 @@ import mongoose from "mongoose";
 const user=mongoose.Schema({
     name:{
         type:String
+    },
+    video:{
+        type:Media
     }
 
 })

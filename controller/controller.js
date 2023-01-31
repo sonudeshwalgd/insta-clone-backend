@@ -10,3 +10,9 @@ export const postHomepage=async (req,res)=>{
     newData.save()
     res.send(req.body)
 }  
+// export const postVideo=async (req,res)=>{
+//     console.log(req.body)
+//     const newData= new userSchema(req.body)
+//     newData.save()
+//     res.send(req.body)
+// }  
